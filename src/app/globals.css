@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --background: #ffffff; */
+  /* --foreground: #171717; */
 }
 
 @theme inline {
+  --text-*: initial;
+
+  --content-max-width: 1440px;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --text-h1: 48px;
+  --text-h1--font-weight: var(--font-weight-medium);
+  --text-h2: 32px;
+  --text-h2--font-weight: var(--font-weight-medium);
+  --text-h3: 28px;
+  --text-h3--font-weight: var(--font-weight-medium);
+  --text-h4: 24px;
+  --text-h4--font-weight: var(--font-weight-medium);
+  --text-h5: 20px;
+  --text-h5--font-weight: var(--font-weight-medium);
+
+  --text-body-xl: 20px;
+  --text-body-lg: 18px;
+  --text-body-md: 16px;
+  --text-body-sm: 14px;
+  --text-body-xs: 12px;
+
+  --color-neutral-100: #000000;
+  --color-neutral-90: #36383b;
+  --color-neutral-80: #6d7076;
+  --color-neutral-70: #a3a7b0;
+  --color-neutral-60: #d9dfeb;
+  --color-neutral-50: #e1e5ef;
+  --color-neutral-40: #e8ecf3;
+  --color-neutral-30: #f0f2f7;
+  --color-neutral-20: #f7f9fb;
+  --color-neutral-10: #fcfcfe;
+  --color-neutral-0: #ffffff;
+
+  --color-red-100: #230f0f;
+  --color-red-90: #461e1e;
+  --color-red-80: #692d2d;
+  --color-red-70: #8c3c3c;
+  --color-red-60: #af4b4b;
+  --color-red-50: #bf6f6f;
+  --color-red-40: #cf9393;
+  --color-red-30: #dfb7b7;
+  --color-red-20: #efdbdb;
+  --color-red-10: #f7eded;
+
+  --color-content-dark-primary: var(--color-neutral-100);
+  --color-content-dark-secondary: var(--color-neutral-80);
+  --color-content-dark-tertiary: var(--color-neutral-70);
+  --color-content-dark-disable: var(--color-neutral-60);
+
+  --color-content-light-primary: var(--color-neutral-0);
+  --color-content-light-secondary: var(--color-neutral-20);
+  --color-content-light-tertiary: var(--color-neutral-30);
+  --color-content-light-disable: var(--color-neutral-60);
+
+  --color-bg-primary: var(--color-neutral-0);
+  --color-bg-secondary: var(--color-neutral-20);
+  --color-bg-tertiary: var(--color-neutral-30);
+
+  --color-action-primary-base: var(--color-neutral-100);
+  --color-action-primary-hover: var(--color-neutral-80);
+  --color-action-primary-active: var(--color-neutral-90);
+  --color-action-primary-selected: var(--color-neutral-90);
+  --color-action-primary-disabled: var(--color-neutral-20);
+
+  --color-action-secondary-base: var(--color-neutral-0);
+  --color-action-secondary-base2: var(--color-neutral-30);
+  --color-action-secondary-hover: var(--color-neutral-40);
+  --color-action-secondary-active: var(--color-neutral-50);
+  --color-action-secondary-selected: var(--color-neutral-30);
+  --color-action-secondary-disabled: var(--color-neutral-20);
+
+  --color-action-outline-base: var(--color-neutral-60);
+  --color-action-outline-hover: var(--color-neutral-100);
+  --color-action-outline-active: var(--color-neutral-80);
+  --color-action-outline-selected: var(--color-neutral-70);
+  --color-action-outline-disabled: var(--color-neutral-40);
+
+  --color-action-destructive-base: var(--color-red-50);
+  --color-action-destructive-hover: var(--color-red-60);
+  --color-action-destructive-active: var(--color-red-70);
+  --color-action-destructive-selected: var(--color-red-60);
+  --color-action-destructive-disabled: var(--color-red-20);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* --background: #0a0a0a; */
+    /* --foreground: #ededed; */
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-bg-primary);
+  color: var(--color-content-dark-primary);
   font-family: Arial, Helvetica, sans-serif;
 }
