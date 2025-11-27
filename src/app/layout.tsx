@@ -23,8 +23,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
-        <Footer />
+        <div className="pt-22 h-screen flex flex-col justify-between items-center">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -13,22 +13,24 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --text-h1: 48px;
+  --text-h1: 64px;
   --text-h1--font-weight: var(--font-weight-medium);
-  --text-h2: 32px;
+  --text-h2: 48px;
   --text-h2--font-weight: var(--font-weight-medium);
-  --text-h3: 28px;
+  --text-h3: 32px;
   --text-h3--font-weight: var(--font-weight-medium);
-  --text-h4: 24px;
+  --text-h4: 28px;
   --text-h4--font-weight: var(--font-weight-medium);
-  --text-h5: 20px;
+  --text-h5: 24px;
   --text-h5--font-weight: var(--font-weight-medium);
+  --text-h6: 20px;
+  --text-h6--font-weight: var(--font-weight-medium);
 
-  --text-body-xl: 20px;
-  --text-body-lg: 18px;
-  --text-body-md: 16px;
-  --text-body-sm: 14px;
-  --text-body-xs: 12px;
+  --text-body-xl: 18px;
+  --text-body-lg: 16px;
+  --text-body-md: 14px;
+  --text-body-sm: 12px;
+  --text-body-xs: 10px;
 
   --color-neutral-100: #000000;
   --color-neutral-90: #36383b;
@@ -104,4 +106,5 @@ body {
   background: var(--color-bg-primary);
   color: var(--color-content-dark-primary);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }

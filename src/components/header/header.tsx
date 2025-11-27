@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <header className="flex fixed w-full items-center justify-center bg-bg-primary">
+    <header className="flex fixed w-full items-center justify-center bg-bg-primary z-999">
       <div className="flex max-w-(--content-max-width) w-full justify-between items-center py-6 px-20">
         <Link href="/">
           <Image
