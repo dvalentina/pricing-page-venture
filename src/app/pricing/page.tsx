@@ -1,10 +1,11 @@
-import Banner from "@/components/banner/banner";
+import BannerSection from "@/components/banner-section/banner-section";
+import TitleSection from "@/components/title-section/title-section";
 
 function PricingPage() {
   return (
     <div className="flex flex-col w-full">
-      <h1>Pricing page</h1>
-      <Banner />
+      <TitleSection />
+      <BannerSection />
     </div>
   );
 }

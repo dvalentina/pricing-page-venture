@@ -2,7 +2,7 @@ import Link from "next/link";
 import Button from "../button/button";
 import Image from "next/image";
 
-function Banner() {
+function BannerSection() {
   return (
     <section className="w-full flex justify-center items-center">
       <div className="max-w-(--content-max-width) py-24 px-20 flex justify-center items-center w-full">
@@ -39,4 +39,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default BannerSection;
