@@ -33,15 +33,15 @@
   --text-body-xs: 10px;
 
   --color-neutral-100: #000000;
-  --color-neutral-90: #36383b;
-  --color-neutral-80: #6d7076;
-  --color-neutral-70: #a3a7b0;
-  --color-neutral-60: #d9dfeb;
-  --color-neutral-50: #e1e5ef;
-  --color-neutral-40: #e8ecf3;
-  --color-neutral-30: #f0f2f7;
-  --color-neutral-20: #f7f9fb;
-  --color-neutral-10: #fcfcfe;
+  --color-neutral-90: #4b4b4b;
+  --color-neutral-80: #717171;
+  --color-neutral-70: #afafaf;
+  --color-neutral-60: #d8d8d8;
+  --color-neutral-50: #e4e4e4;
+  --color-neutral-40: #e8e8e8;
+  --color-neutral-30: #f2f2f2;
+  --color-neutral-20: #f9f9f9;
+  --color-neutral-10: #fdfdfd;
   --color-neutral-0: #ffffff;
 
   --color-red-100: #230f0f;
@@ -93,6 +93,10 @@
   --color-action-destructive-active: var(--color-red-70);
   --color-action-destructive-selected: var(--color-red-60);
   --color-action-destructive-disabled: var(--color-red-20);
+
+  --color-border-primary: var(--color-neutral-60);
+  --color-border-secondary: var(--color-neutral-70);
+  --color-border-tertiary: var(--color-neutral-100);
 }
 
 @media (prefers-color-scheme: dark) {

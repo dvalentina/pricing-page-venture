@@ -13,7 +13,8 @@ const buttonVariants = cva(
         secondary:
           "bg-action-secondary-base2 text-content-dark-primary hover:bg-action-secondary-hover disabled:bg-action-secondary-disabled disabled:text-content-dark-disabled",
         // "secondary-border": "",
-        // tertiary: "",
+        tertiary:
+          "bg-transparent text-content-dark-primary hover:bg-action-secondary-hover hover:text-content-dark-primary! disabled:bg-transparent disabled:text-content-dark-disabled",
         link: "bg-transparent text-content-dark-primary underline decoration-2 underline-offset-3 hover:text-action-primary-hover disabled:text-action-primary-disabled",
         "link-inverted":
           "bg-transparent text-content-light-primary underline decoration-2 underline-offset-3 hover:text-action-secondary-hover disabled:text-action-primary-disabled",
