@@ -103,6 +103,37 @@
   --color-border-primary: var(--color-neutral-60);
   --color-border-secondary: var(--color-neutral-70);
   --color-border-tertiary: var(--color-neutral-100);
+
+  /* Animations */
+
+  --animate-slide-down: slideDown 300ms ease-out;
+  --animate-slide-up: slideUp 200ms;
+
+  @keyframes slideDown {
+    from {
+      height: 0;
+      opacity: 0;
+      margin-top: 0;
+    }
+    to {
+      height: var(--radix-collapsible-content-height);
+      opacity: 100%;
+      margin-top: 16px;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      height: var(--radix-collapsible-content-height);
+      opacity: 100%;
+      margin-top: 16px;
+    }
+    to {
+      height: 0;
+      margin-top: 0;
+      opacity: 0;
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
