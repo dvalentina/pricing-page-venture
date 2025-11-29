@@ -18,7 +18,7 @@ function BannerSection() {
               </p>
             </div>
             <div className="flex gap-3">
-              <Button asChild variant="secondary" size="xl">
+              <Button asChild variant="secondary-border" size="xl">
                 <Link href="/getstarted">Get Started</Link>
               </Button>
               <Button variant="link-inverted" size="xl" asChild>

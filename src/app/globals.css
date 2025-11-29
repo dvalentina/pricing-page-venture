@@ -15,16 +15,22 @@
 
   --text-h1: 64px;
   --text-h1--font-weight: var(--font-weight-medium);
+  --text-h1--line-height: 120%;
   --text-h2: 48px;
   --text-h2--font-weight: var(--font-weight-medium);
+  --text-h2--line-height: 120%;
   --text-h3: 32px;
   --text-h3--font-weight: var(--font-weight-medium);
+  --text-h3--line-height: 120%;
   --text-h4: 28px;
   --text-h4--font-weight: var(--font-weight-medium);
+  --text-h4--line-height: 120%;
   --text-h5: 24px;
   --text-h5--font-weight: var(--font-weight-medium);
+  --text-h5--line-height: 120%;
   --text-h6: 20px;
   --text-h6--font-weight: var(--font-weight-medium);
+  --text-h6--line-height: 120%;
 
   --text-body-xl: 18px;
   --text-body-lg: 16px;
@@ -82,11 +88,11 @@
   --color-action-secondary-selected: var(--color-neutral-30);
   --color-action-secondary-disabled: var(--color-neutral-20);
 
-  --color-action-outline-base: var(--color-neutral-60);
+  --color-action-outline-base: var(--color-neutral-100);
   --color-action-outline-hover: var(--color-neutral-100);
   --color-action-outline-active: var(--color-neutral-80);
   --color-action-outline-selected: var(--color-neutral-70);
-  --color-action-outline-disabled: var(--color-neutral-40);
+  --color-action-outline-disabled: var(--color-neutral-30);
 
   --color-action-destructive-base: var(--color-red-50);
   --color-action-destructive-hover: var(--color-red-60);

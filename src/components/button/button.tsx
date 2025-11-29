@@ -4,7 +4,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import clsx from "clsx";
 
 const buttonVariants = cva(
-  "inline-flex justify-center items-center whitespace-nowrap rounded-sm gap-2 text-body-md font-medium hover:cursor-pointer disabled:pointer-events-none",
+  "inline-flex justify-center items-center whitespace-nowrap rounded-sm gap-2 text-body-md font-medium hover:cursor-pointer disabled:pointer-events-none transition-all duration-300",
   {
     variants: {
       variant: {
@@ -12,7 +12,8 @@ const buttonVariants = cva(
           "bg-action-primary-base text-content-light-primary hover:bg-action-primary-hover disabled:bg-action-primary-disabled disabled:text-content-light-disabled",
         secondary:
           "bg-action-secondary-base2 text-content-dark-primary hover:bg-action-secondary-hover disabled:bg-action-secondary-disabled disabled:text-content-dark-disabled",
-        // "secondary-border": "",
+        "secondary-border":
+          "bg-action-secondary-base text-content-dark-primary border border-action-outline-base hover:bg-action-secondary-hover hover:border-action-outline-hover disabled:bg-action-secondary-disabled disabled:text-content-dark-disabled disabled:border-action-outline-disabled",
         tertiary:
           "bg-transparent text-content-dark-primary hover:bg-action-secondary-hover hover:text-content-dark-primary! disabled:bg-transparent disabled:text-content-dark-disabled",
         link: "bg-transparent text-content-dark-primary underline decoration-2 underline-offset-3 hover:text-action-primary-hover disabled:text-action-primary-disabled",
