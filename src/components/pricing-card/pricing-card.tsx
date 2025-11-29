@@ -6,7 +6,7 @@ import CheckIcon from "public/check-icon.svg";
 export const PricingCard = ({ children, ...props }: CardProps) => {
   return (
     <Card asChild {...props}>
-      <article>{children}</article>
+      <article className="text-left">{children}</article>
     </Card>
   );
 };
@@ -47,7 +47,10 @@ const PricingCardTitle = ({
 const ListMarker = () => {
   return (
     <div className="w-5 h-5 rounded-sm flex items-center justify-center bg-neutral-30 group-data-[accent=true]:bg-neutral-90">
-      <CheckIcon className="text-neutral-70 group-data-[accent=true]:text-neutral-0" />
+      <CheckIcon
+        className="text-neutral-70 group-data-[accent=true]:text-neutral-0 size-4"
+        strokeWidth={1.6}
+      />
     </div>
   );
 };

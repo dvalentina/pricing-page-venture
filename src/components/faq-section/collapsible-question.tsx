@@ -22,7 +22,7 @@ function CollapsibleQuestion({
           <CaretUp className="hidden group-data-[state=open]:block" />
         </div>
       </CollapsibleTrigger>
-      <CollapsibleContent className="text-body-xl text-content-dark-secondary font-normal data-[state=open]:animate-slide-down data-[state=closed]:animate-slide-up data-[state=open]:mt-4">
+      <CollapsibleContent className="text-body-xl text-content-dark-secondary font-normal data-[state=open]:animate-collapsible-slide-down data-[state=closed]:animate-collapsible-slide-up data-[state=open]:mt-4">
         {answer}
       </CollapsibleContent>
     </Collapsible>

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import { TooltipProvider } from "@/components/tooltip/tooltip";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,11 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <div className="pt-22 h-screen flex flex-col justify-between items-center">
-          {children}
-          <Footer />
-        </div>
+        <TooltipProvider>
+          <Header />
+          <div className="pt-22 h-screen flex flex-col justify-between items-center">
+            {children}
+            <Footer />
+          </div>
+        </TooltipProvider>
       </body>
     </html>
   );
