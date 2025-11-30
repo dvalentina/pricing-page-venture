@@ -33,7 +33,7 @@ function useToggleContext() {
 export const ToggleGroup = React.forwardRef<
   HTMLDivElement,
   ToggleGroupSingleProps
->(({ className, children, value, onValueChange, ...props }, ref) => {
+>(({ className, children, value, ...props }, ref) => {
   const [activeItem, setActiveItem] = useState<string | undefined>(value);
   const [itemUnderlineWidth, setItemUnderlineWidth] = useState(0);
   const [itemUnderlineOffset, setItemUnderlineOffset] = useState(0);
@@ -46,6 +46,10 @@ export const ToggleGroup = React.forwardRef<
     activeItem,
     setActiveItem,
   };
+
+  useEffect(() => {
+    setActiveItem(value);
+  }, [value]);
 
   const underline = (
     <Button asChild>
@@ -68,10 +72,6 @@ export const ToggleGroup = React.forwardRef<
           "relative rounded-lg bg-bg-primary p-2 border border-border-primary flex gap-3",
           className
         )}
-        onValueChange={(value: string) => {
-          setActiveItem(value);
-          if (onValueChange) onValueChange(value);
-        }}
         value={value}
         {...props}
       >
