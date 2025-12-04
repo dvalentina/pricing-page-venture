@@ -76,7 +76,9 @@ export const ToggleGroup = React.forwardRef<
         {...props}
       >
         {children}
-        {activeItem ? underline : null}
+        {activeItem && itemUnderlineWidth && itemUnderlineHeight
+          ? underline
+          : null}
       </ToggleGroupPrimitive>
     </ToggleContext.Provider>
   );
