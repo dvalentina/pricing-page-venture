@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { footerLinks, socials } from "./constants";
 import Button from "../button/button";
+import SubscribeForm from "../subscribe-form/subscribe-form";
 
 function Footer() {
   return (
@@ -10,7 +11,6 @@ function Footer() {
         <div className="flex justify-between">
           <Link href="/">
             <Image
-              // className="dark:invert"
               src="/venture-logo-text.svg"
               alt="Venture logo"
               width={165}
@@ -57,7 +57,7 @@ function Footer() {
               </div>
             ))}
           </div>
-          <div>Subscribe to our NewsLetter</div>
+          <SubscribeForm />
         </div>
       </div>
     </footer>

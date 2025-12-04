@@ -6,9 +6,10 @@ export interface Props {
   accent?: boolean;
   children: React.ReactNode;
   asChild?: boolean;
+  className?: string;
 }
 
-function Card({ accent = false, asChild = false, children }: Props) {
+function Card({ accent = false, asChild = false, className, children }: Props) {
   const Comp = asChild ? Slot : "div";
   return (
     <Comp
@@ -16,7 +17,8 @@ function Card({ accent = false, asChild = false, children }: Props) {
         "group flex flex-col gap-6 p-6 rounded-lg w-full border border-border-primary",
         accent
           ? "bg-content-dark-primary text-content-light-primary"
-          : "bg-bg-primary text-content-dark-primary"
+          : "bg-bg-primary text-content-dark-primary",
+        className
       )}
       data-accent={accent}
     >
