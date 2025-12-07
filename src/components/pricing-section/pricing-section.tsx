@@ -4,7 +4,7 @@ import { PricingCard } from "../pricing-card/pricing-card";
 import { useBillingFrequencyContext } from "../toggle-billing-frequency/billing-frequency-context";
 import ToggleBillingFrequency from "../toggle-billing-frequency/toggle-billing-frequency";
 import { cards } from "./constants";
-import Marquee from "./marquee";
+import MarqueeLogos from "./marquee-logos";
 
 function PricingSection() {
   const { billingFrequency } = useBillingFrequencyContext();
@@ -26,7 +26,7 @@ function PricingSection() {
             );
           })}
         </div>
-        <Marquee />
+        <MarqueeLogos />
       </div>
     </section>
   );
