@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import { TooltipProvider } from "@/components/tooltip/tooltip";
+import clsx from "clsx";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={clsx(inter.className, "relative")}>
         <TooltipProvider>
           <Header />
           <div className="pt-22 h-screen flex flex-col justify-between items-center">

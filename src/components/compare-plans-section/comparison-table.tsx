@@ -6,14 +6,14 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import clsx from "clsx";
-import { HTMLAttributes } from "react";
+import { ComponentPropsWithRef, HTMLAttributes } from "react";
 import { data } from "./constants";
 import { columns } from "./columns";
 
-const Table = ({ className, ...props }: HTMLAttributes<HTMLTableElement>) => (
+const Table = ({ className, ...props }: ComponentPropsWithRef<"table">) => (
   <table
     className={clsx(
-      "border-separate border-spacing-x-5 border-spacing-y-6",
+      // "border-separate border-spacing-x-5 border-spacing-y-6",
       className
     )}
     {...props}
@@ -28,7 +28,7 @@ const TableSectionTitle = ({ children }: { children: React.ReactNode }) => (
   <tr>
     <td
       colSpan={columns.length}
-      className="text-h4 text-content-dark-primary capitalize pt-3"
+      className="text-h4 text-content-dark-primary capitalize pt-9 pb-3"
     >
       {children}
     </td>
@@ -40,12 +40,20 @@ const TableCell = ({
   children,
   ...props
 }: HTMLAttributes<HTMLTableCellElement>) => (
-  <td className={className} {...props}>
+  <td
+    className={clsx(
+      className,
+      "py-3 pr-5.5 not-first:pl-2.5 not-first:not-last:pr-2.5"
+    )}
+    {...props}
+  >
     <div className="border-b border-b-border-primary pb-5 w-full text-body-xl text-content-dark-primary font-normal">
       {children}
     </div>
   </td>
 );
+
+const headerHeight = "85px";
 
 function ComparisonTable() {
   "use no memo"; // for TanStack Table
@@ -68,12 +76,22 @@ function ComparisonTable() {
           />
         ))}
       </colgroup>
-      <thead>
+      <thead
+        style={{
+          position: "sticky",
+          top: headerHeight,
+        }}
+        className="bg-bg-primary"
+      >
         {table.getHeaderGroups().map((headerGroup) => (
           <>
             <tr key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
-                <th key={header.id} colSpan={header.colSpan}>
+                <th
+                  key={header.id}
+                  colSpan={header.colSpan}
+                  className="py-3 pr-5.5 not-first:pl-2.5 not-first:not-last:pr-2.5"
+                >
                   {flexRender(
                     header.column.columnDef.header,
                     header.getContext()
@@ -83,7 +101,7 @@ function ComparisonTable() {
             </tr>
             <tr>
               <th colSpan={columns.length}>
-                <hr className="border-border-primary mt-3" />
+                <hr className="border-border-primary mt-6" />
               </th>
             </tr>
           </>

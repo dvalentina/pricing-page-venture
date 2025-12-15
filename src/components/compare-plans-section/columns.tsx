@@ -29,15 +29,14 @@ const createCell = ({ cell }: CellContext<TData, TValue>) => {
   const value = cell.getValue();
 
   if (value === true) {
-    return <CheckIcon className="size-6" />;
+    return <CheckIcon className="size-6 mb-[3px]" />;
   } else if (value === false) {
-    return <CrossIcon />;
+    return <CrossIcon className="size-6 mb-[3px]" />;
   }
   return value;
 };
 
 const HeaderCard = ({ title }: { title: string }) => {
-  console.log({ title });
   const { billingFrequency } = useBillingFrequencyContext();
   const card = cards.find(
     (card) => card.title.toLowerCase() === title.toLowerCase()
