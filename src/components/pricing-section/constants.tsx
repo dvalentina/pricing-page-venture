@@ -7,12 +7,14 @@ export const cards = [
   {
     title: "Free",
     annually: {
-      cost: "$0",
+      cost: 0,
+      currency: "$",
       discount: null,
       description: descriptionAnnually,
     },
     monthly: {
-      cost: "$0",
+      cost: 0,
+      currency: "$",
       discount: null,
       description: descriptionMonthly,
     },
@@ -29,12 +31,14 @@ export const cards = [
   {
     title: "Basic",
     annually: {
-      cost: "$39",
+      cost: 39,
+      currency: "$",
       discount: "-15%",
       description: descriptionAnnually,
     },
     monthly: {
-      cost: "$45",
+      cost: 45,
+      currency: "$",
       discount: null,
       description: descriptionMonthly,
     },
@@ -47,12 +51,14 @@ export const cards = [
   {
     title: "Pro",
     annually: {
-      cost: "$59",
+      cost: 59,
+      currency: "$",
       discount: "-15%",
       description: descriptionAnnually,
     },
     monthly: {
-      cost: "$69",
+      cost: 69,
+      currency: "$",
       discount: null,
       description: descriptionMonthly,
     },
@@ -70,12 +76,14 @@ export const cards = [
   {
     title: "Enterprise",
     annually: {
-      cost: "$129",
+      cost: 129,
+      currency: "$",
       discount: null,
       description: descriptionAnnually,
     },
     monthly: {
-      cost: "$129",
+      cost: 129,
+      currency: "$",
       discount: null,
       description: descriptionMonthly,
     },

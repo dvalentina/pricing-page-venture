@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Button from "../button/button";
 import Card, { Props as CardProps } from "../card/card";
 import CheckIcon from "public/check-icon.svg";
+import { Counter } from "../counter/counter";
 
 export const PricingCard = ({ children, ...props }: CardProps) => {
   return (
@@ -14,11 +15,13 @@ export const PricingCard = ({ children, ...props }: CardProps) => {
 const PricingCardTitle = ({
   title,
   cost,
+  currency,
   discount,
   description,
 }: {
   title: string;
-  cost: string;
+  cost: number;
+  currency: string;
   discount: string | null;
   description: string;
 }) => {
@@ -26,7 +29,10 @@ const PricingCardTitle = ({
     <div className="flex flex-col gap-1">
       <h2 className="text-h5">{title}</h2>
       <div className="flex gap-2 items-center">
-        <p className="text-h3">{cost}</p>
+        <p className="text-h3 flex">
+          <span>{currency}</span>
+          <Counter value={cost} height={38} />
+        </p>
         {discount && (
           <div
             className={clsx(
