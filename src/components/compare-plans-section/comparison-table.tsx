@@ -11,13 +11,7 @@ import { data } from "./constants";
 import { columns } from "./columns";
 
 const Table = ({ className, ...props }: ComponentPropsWithRef<"table">) => (
-  <table
-    className={clsx(
-      // "border-separate border-spacing-x-5 border-spacing-y-6",
-      className
-    )}
-    {...props}
-  />
+  <table className={clsx(className)} {...props} />
 );
 
 const TableRow = ({ ...props }: HTMLAttributes<HTMLTableRowElement>) => (
@@ -40,14 +34,8 @@ const TableCell = ({
   children,
   ...props
 }: HTMLAttributes<HTMLTableCellElement>) => (
-  <td
-    className={clsx(
-      className,
-      "py-3 pr-5.5 not-first:pl-2.5 not-first:not-last:pr-2.5"
-    )}
-    {...props}
-  >
-    <div className="border-b border-b-border-primary pb-5 w-full text-body-xl text-content-dark-primary font-normal">
+  <td className={clsx(className, "py-3 first:pr-3 not-first:pl-5")} {...props}>
+    <div className="border-b border-b-border-primary pb-5 w-full text-body-xl text-content-dark-primary font-normal whitespace-nowrap">
       {children}
     </div>
   </td>
@@ -72,7 +60,7 @@ function ComparisonTable() {
           <col
             key={index}
             span={1}
-            style={{ width: index === 0 ? "310px" : "210px" }}
+            style={{ width: index === 0 ? "330px" : "237px" }}
           />
         ))}
       </colgroup>
@@ -90,7 +78,7 @@ function ComparisonTable() {
                 <th
                   key={header.id}
                   colSpan={header.colSpan}
-                  className="py-3 pr-5.5 not-first:pl-2.5 not-first:not-last:pr-2.5"
+                  className="py-3 first:pr-3 not-first:pl-5"
                 >
                   {flexRender(
                     header.column.columnDef.header,
