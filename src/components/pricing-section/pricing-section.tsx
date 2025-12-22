@@ -20,6 +20,7 @@ function PricingSection() {
           transition={{
             type: "spring",
             duration: 0.6,
+            delay: 0.6,
           }}
         >
           <ToggleBillingFrequency />
@@ -38,7 +39,7 @@ function PricingSection() {
                   type: "spring",
                   bounce: 0.4,
                   duration: 0.6,
-                  delay: index * 0.1,
+                  delay: index * 0.1 + 0.6,
                 }}
                 className="flex w-full"
               >

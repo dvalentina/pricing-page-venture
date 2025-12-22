@@ -15,7 +15,8 @@ function FAQSection() {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            duration: 0.6,
+            bounce: 0.4,
+            duration: 1,
           }}
         >
           Frequently Asked Questions
