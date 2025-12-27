@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import Button from "../button/button";
-import Card, { Props as CardProps } from "../card/card";
+import Button from "@/shared/ui/button/button";
+import Card, { Props as CardProps } from "@/shared/ui/card/card";
 import CheckIcon from "public/check-icon.svg";
-import { Counter } from "../counter/counter";
+import { Counter } from "@/shared/ui/counter/counter";
 
 export const PricingCard = ({ children, ...props }: CardProps) => {
   return (

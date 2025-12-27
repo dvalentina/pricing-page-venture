@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "../button/button";
+import Button from "../../shared/ui/button/button";
 import HeaderLink from "./header-link";
 import Image from "next/image";
 

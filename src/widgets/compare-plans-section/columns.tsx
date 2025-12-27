@@ -1,10 +1,10 @@
 import { CellContext, ColumnDef } from "@tanstack/react-table";
 import { TData, TValue } from "./model";
-import ToggleBillingFrequency from "../toggle-billing-frequency/toggle-billing-frequency";
-import InfoTooltip from "../info-tooltip/info-tooltip";
-import { useBillingFrequencyContext } from "../toggle-billing-frequency/billing-frequency-context";
+import ToggleBillingFrequency from "@/features/toggle-billing-frequency/toggle-billing-frequency";
+import InfoTooltip from "@/features/info-tooltip/info-tooltip";
+import { useBillingFrequencyContext } from "@/features/toggle-billing-frequency/billing-frequency-context";
 import { cards } from "../pricing-section/constants";
-import { PricingCard } from "../pricing-card/pricing-card";
+import { PricingCard } from "@/features/pricing-card/pricing-card";
 import CheckIcon from "public/check-icon.svg";
 import CrossIcon from "public/x-icon.svg";
 

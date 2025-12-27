@@ -4,7 +4,7 @@ import GoogleLogo from "public/company-logos/google-logo.svg";
 import SlackLogo from "public/company-logos/slack-logo.svg";
 import SquareLogo from "public/company-logos/square-logo.svg";
 import ZoomLogo from "public/company-logos/zoom-logo.svg";
-import Marquee from "../marquee/marquee";
+import Marquee from "@/shared/ui/marquee/marquee";
 
 function MarqueeLogos() {
   const logos = [

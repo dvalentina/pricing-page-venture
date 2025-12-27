@@ -1,6 +1,6 @@
-import Button from "../button/button";
-import Card from "../card/card";
-import { Input } from "../input/input";
+import Button from "@/shared/ui/button/button";
+import Card from "@/shared/ui/card/card";
+import { Input } from "@/shared/ui/input/input";
 
 function SubscribeForm() {
   return (

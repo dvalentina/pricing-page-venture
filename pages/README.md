@@ -1,0 +1,1 @@
+This folder is added for Next.js and Feature-Sliced Design architecture compatibility.

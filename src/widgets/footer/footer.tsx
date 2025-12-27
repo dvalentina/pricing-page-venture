@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { footerLinks, socials } from "./constants";
-import Button from "../button/button";
-import SubscribeForm from "../subscribe-form/subscribe-form";
+import Button from "@/shared/ui/button/button";
+import SubscribeForm from "@/features/subscribe-form/subscribe-form";
 
 function Footer() {
   return (

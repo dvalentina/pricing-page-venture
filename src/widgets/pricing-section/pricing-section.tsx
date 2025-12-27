@@ -1,8 +1,8 @@
 "use client";
 
-import { PricingCard } from "../pricing-card/pricing-card";
-import { useBillingFrequencyContext } from "../toggle-billing-frequency/billing-frequency-context";
-import ToggleBillingFrequency from "../toggle-billing-frequency/toggle-billing-frequency";
+import { PricingCard } from "@/features/pricing-card/pricing-card";
+import { useBillingFrequencyContext } from "@/features/toggle-billing-frequency/billing-frequency-context";
+import ToggleBillingFrequency from "@/features/toggle-billing-frequency/toggle-billing-frequency";
 import { cards } from "./constants";
 import MarqueeLogos from "./marquee-logos";
 import { motion } from "motion/react";

@@ -1,6 +1,6 @@
 "use client";
 
-import { ToggleGroup, ToggleGroupItem } from "../toggle-group/toggle-group";
+import { ToggleGroup, ToggleGroupItem } from "../../shared/ui/toggle-group/toggle-group";
 import {
   BillingFrequency,
   useBillingFrequencyContext,

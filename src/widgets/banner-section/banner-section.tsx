@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Button from "../button/button";
+import Button from "@/shared/ui/button/button";
 import Image from "next/image";
 import { motion } from "motion/react";
 

@@ -8,7 +8,7 @@ import {
   ToggleGroupItem as ToggleGroupItemPrimitive,
 } from "@radix-ui/react-toggle-group";
 import clsx from "clsx";
-import Button from "../button/button";
+import Button from "@/shared/ui/button/button";
 
 interface ContextProps {
   setItemUnderlineOffset?: (value: number) => void;

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
-import { TooltipProvider } from "@/components/tooltip/tooltip";
+import Header from "@/widgets/header/header";
+import Footer from "@/widgets/footer/footer";
+import { TooltipProvider } from "@/shared/ui/tooltip/tooltip";
 import clsx from "clsx";
 
 const inter = Inter({
