@@ -13,6 +13,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
+  --text-display: 84px;
+  --text-display--font-weight: var(--font-weight-medium);
+  --text-display--line-height: 100%;
   --text-h1: 64px;
   --text-h1--font-weight: var(--font-weight-medium);
   --text-h1--line-height: 120%;
