@@ -67,12 +67,12 @@
   --color-content-dark-primary: var(--color-neutral-100);
   --color-content-dark-secondary: var(--color-neutral-80);
   --color-content-dark-tertiary: var(--color-neutral-70);
-  --color-content-dark-disable: var(--color-neutral-60);
+  --color-content-dark-disabled: var(--color-neutral-60);
 
   --color-content-light-primary: var(--color-neutral-0);
   --color-content-light-secondary: var(--color-neutral-20);
   --color-content-light-tertiary: var(--color-neutral-30);
-  --color-content-light-disable: var(--color-neutral-60);
+  --color-content-light-disabled: var(--color-neutral-60);
 
   --color-bg-primary: var(--color-neutral-0);
   --color-bg-secondary: var(--color-neutral-20);
