@@ -1,4 +1,5 @@
 import { AdvantagesSection } from "@/widgets/home-page-section-advantages";
+import { CTASection } from "@/widgets/home-page-section-cta";
 import { FeaturesSection } from "@/widgets/home-page-section-features";
 import { HeroSection } from "@/widgets/home-page-section-hero";
 import { IntegrationsSection } from "@/widgets/home-page-section-integrations";
@@ -14,6 +15,7 @@ export function HomePage() {
       <AdvantagesSection />
       <IntegrationsSection />
       <TestimonialSection />
+      <CTASection />
     </>
   );
 }
