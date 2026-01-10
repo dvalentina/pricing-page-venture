@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={clsx(inter.className, "relative overflow-x-clip")}>
         <TooltipProvider>
           <Header />
-          <div className="pt-22 h-screen flex flex-col justify-between items-center">
+          <div className="h-auto flex flex-col justify-between items-center">
             {children}
             <Footer />
           </div>

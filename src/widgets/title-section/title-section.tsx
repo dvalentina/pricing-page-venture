@@ -8,7 +8,7 @@ const gradientClassName =
 
 function TitleSection() {
   return (
-    <section className="relative w-full flex justify-center items-center ">
+    <section className="pt-22 relative w-full flex justify-center items-center ">
       <div className={clsx(gradientClassName, "top-0 bg-linear-to-b")} />
       <div className="w-full max-w-(--content-max-width) justify-center items-center py-24 gap-5 bg-[url(/pricing-page-pattern-dotted-lines.svg)] bg-cover">
         <motion.h1
